@@ -127,18 +127,21 @@ export default function Home() {
 
         {user && !isLoading && (
           <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              User Profile
+            </h2>
             <UserProfile
-  name={user.name}
-  username={user.username}
-  email={user.email}
-  title={user.title}
-  company={user.company}
-  city={user.city}
-  country={user.country}
-  bio={user.bio}
-  skills={user.skills}
-  image={user.avatar}
-/>
+                name={user.name}
+                username={user.username}
+                email={user.email}
+                title={user.title}
+                company={user.company}
+                city={user.city}
+                country={user.country}
+                bio={user.bio}
+                skills={user.skills}
+                image={user.avatar}
+            />
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               People You May Know
