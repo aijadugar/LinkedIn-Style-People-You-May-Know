@@ -3,4 +3,10 @@ gensim==4.4.0
 torch==2.11.0
 joblib==1.5.3
 huggingface_hub==1.11.0
+fastapi==0.136.0
+dotenv==0.9.9
+numpy
+os
+json
+math
 uvicorn
