@@ -5,8 +5,7 @@ joblib==1.5.3
 huggingface_hub==1.11.0
 fastapi==0.136.0
 dotenv==0.9.9
-numpy
-os
+numpy==2.4.4
 json
 math
 uvicorn
