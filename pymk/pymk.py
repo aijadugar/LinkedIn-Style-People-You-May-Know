@@ -201,7 +201,7 @@ def pymk(user):
 
     candidates = list(set(candidates))
     
-    l1_res = _l1_rank(G, l1_model, user, candidates, neighbor_cache)
+    l1_res = _l1_rank(G, l1_clearmodel, user, candidates, neighbor_cache)
 
     l2_res = _l2_rank(l2_model, user, l1_res, emb_cache)
 
