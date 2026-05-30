@@ -14,6 +14,9 @@ client = MongoClient(os.getenv("MONGO_URL"))
 db = client["pymk"]
 collection = db["user_profiles"]
 
+@app.get("/")
+def root():
+    return {"status": "ok"}
 
 @app.get("/recommend/{user_id}")
 def recommend(user_id: str):
