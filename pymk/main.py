@@ -18,6 +18,10 @@ collection = db["user_profiles"]
 def root():
     return {"status": "ok"}
 
+@app.get("/health")
+def health():
+    return {"healthy": True}
+
 @app.get("/recommend/{user_id}")
 def recommend(user_id: str):
 
